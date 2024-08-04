@@ -17,7 +17,7 @@ const Home = () => {
 
     return (
         <div className="Home" ref={ref} style={{ background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
-            <motion.h1 style={{y:yText}}> Karamveer Singh</motion.h1>
+            <motion.h1 style={{y:yText}}> My Portfolio</motion.h1>
             <motion.div className="mountains"></motion.div>
             <motion.div style={{y:yBg}} className="planets"></motion.div>
             <motion.div style={{x:yBg}} className="stars"></motion.div>
