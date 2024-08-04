@@ -1,21 +1,44 @@
-.html{
-    scroll-snap-type: y mandatory;
-    behavior: smooth;
-}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
-  }
+}
 
 body {
     background-color: #0c0c1d;
     color: lightgray;
-  }
+}
 
-section{
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
     height: 100vh;
-    scroll-snap-align: center;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+
+    &.home {
+        background-color: #f1f1f1;
+    }
+
+    &.about {
+        background-color: #e1e1e1;
+    }
+
+    &.projects {
+        background-color: #d1d1d1;
+    }
+
+    &.hobbies {
+        background-color: #c1c1c1;
+    }
+
+    &.contact {
+        background-color: #b1b1b1;
+    }
 }
