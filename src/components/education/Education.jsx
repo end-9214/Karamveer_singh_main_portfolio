@@ -38,7 +38,6 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <div className="stars"></div>
         </div>
     );
 }
