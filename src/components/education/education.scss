@@ -40,7 +40,7 @@
     position: absolute;
     width: 5px;
     height: 100%;
-    background-color: #6a0572; /* Deep purple color for the timeline line */
+    background-color: #e1e099; /* Deep purple color for the timeline line */
     left: calc(50% - 1px);
     z-index: 1;
 }
@@ -67,7 +67,7 @@
 .timeline-dot {
     height: 21px;
     width: 21px;
-    background-color: #6a0572; /* Deep purple color for the dots */
+    background-color: #e1e099; /* Deep purple color for the dots */
     box-shadow: 0 0 25px #ba68c8, /* Light purple shadow */
                 0 0 50px #ba68c8; /* Light purple shadow */
     position: absolute;
@@ -84,9 +84,9 @@
 }
 
 .timeline-content {
-    background-color: #2e1a47; /* Dark purple background for the content */
-    border: 3px solid #ba68c8; /* Light purple border */
-    padding: 30px 50px;
+    background-color: #0f0f28; /* Dark purple background for the content */
+    border: 3px solid #e1e099; /* Light purple border */
+    padding: 20px 40px;
     border-radius: 4rem;
     box-shadow: 0 0 10px #ba68c8; /* Light purple shadow */
     cursor: pointer;
