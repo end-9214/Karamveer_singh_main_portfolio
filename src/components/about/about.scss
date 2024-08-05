@@ -13,3 +13,12 @@
     justify-content: center;
     align-items: center;
 }
+.stars {
+    background-image: url('/workspaces/codespaces-react/src/components/home/stars.png');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
