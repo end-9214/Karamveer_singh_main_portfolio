@@ -20,7 +20,7 @@ const Home = () => {
             <motion.h1 style={{y:yText}}> My Portfolio</motion.h1>
             <motion.div className="mountains"></motion.div>
             <motion.div style={{y:yBg}} className="planets"></motion.div>
-            <motion.div style={{x:yBg}} className="stars"></motion.div>
+            <motion.div className="stars"></motion.div>
         </div>
 
     )

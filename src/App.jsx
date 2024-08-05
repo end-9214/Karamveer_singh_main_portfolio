@@ -6,10 +6,12 @@ import Projects from './components/projects/Projects';
 import Hobbies from './components/hobbies/Hobbies';
 import Navbar from './components/navbar/Navbar';
 import Contact from './components/contact/Contact';
+import Education from './components/education/Education';
 
 const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const educationRef = useRef(null);
   const projectsRef = useRef(null);
   const hobbiesRef = useRef(null);
   const contactRef = useRef(null);
@@ -19,7 +21,9 @@ const App = () => {
         homeRef.current.scrollIntoView({ behavior: 'smooth' });
     } else if (section === 'About') {
         aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'Projects') {
+    }else if (section === 'Education') {
+      educationRef.current.scrollIntoView({ behavior: 'smooth' });
+  } else if (section === 'Projects') {
         projectsRef.current.scrollIntoView({ behavior: 'smooth' });
     } else if (section === 'Hobbies') {
         hobbiesRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -37,6 +41,9 @@ const App = () => {
       </section>
       <section ref={aboutRef} className="section about">
         <About />
+      </section>
+      <section ref={educationRef} className="section education">
+        <Education />
       </section>
       <section ref={projectsRef} className="section projects">
         <Projects />

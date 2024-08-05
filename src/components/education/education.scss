@@ -1,0 +1,127 @@
+.Education {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+}
+
+.stars {
+    background-image: url('/workspaces/codespaces-react/src/components/home/stars.png');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.Heading {
+    font-size: 5rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #d1d1d1; /* Gold color for the heading */
+    z-index: 2;
+}
+
+.timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #6a0572; /* Deep purple color for the timeline line */
+    left: calc(50% - 1px);
+    z-index: 1;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: #6a0572; /* Deep purple color for the dots */
+    box-shadow: 0 0 25px #ba68c8, /* Light purple shadow */
+                0 0 50px #ba68c8; /* Light purple shadow */
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: #f0e4d7; /* Light cream color for the date */
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: #2e1a47; /* Dark purple background for the content */
+    border: 3px solid #ba68c8; /* Light purple border */
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #ba68c8; /* Light purple shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ba68c8; /* Light purple shadow on hover */
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: #f0e4d7; /* Light cream color for the heading */
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: #f0e4d7; /* Light cream color for the paragraph */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6a0572; /* Deep purple color for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2e1a47; /* Dark purple color for the scrollbar track */
+    width: 50px;
+}

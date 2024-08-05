@@ -23,11 +23,16 @@ section {
     scroll-behavior: smooth;
 
     &.home {
-        background-color: #f1f1f1;
+        background-color: #6a6a6a;
+        
     }
 
     &.about {
-        background-color: #e1e1e1;
+        background-color: #646363;
+    }
+    &.education {
+        height: 150vh;
+        background-color: #646363;
     }
 
     &.projects {
