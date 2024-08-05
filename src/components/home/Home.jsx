@@ -12,7 +12,8 @@ const Home = () => {
     })
 
     const yText = useTransform(scrollYProgress, [0, 1], ["0%", "300%"])
-    const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
+    const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "150%"])
+
 
 
     return (
