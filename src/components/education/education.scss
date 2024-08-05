@@ -16,13 +16,21 @@
     height: 100%;
     position: absolute;
     z-index: 0;
+    animation: moveStars 10s linear infinite;
+    overflow: hidden;
+
+    @keyframes moveStars {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(20px); }
+        100% { transform: translateX(0); }
+    }
 }
 
 .Heading {
     font-size: 5rem;
     margin-top: 20px;
     text-align: center;
-    color: #d1d1d1; /* Gold color for the heading */
+    color: #f0e4d7; /* Gold color for the heading */
     z-index: 2;
 }
 
@@ -92,6 +100,19 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 2;
+    animation: boxShadowPulse 2s infinite;
+
+    @keyframes boxShadowPulse {
+        0% {
+            box-shadow: 0 0 10px #ba68c8, 0 0 20px #ba68c8;
+        }
+        50% {
+            box-shadow: 0 0 30px #ba68c8, 0 0 60px #ba68c8;
+        }
+        100% {
+            box-shadow: 0 0 10px #ba68c8, 0 0 20px #ba68c8;
+        }
+    }
 }
 
 .timeline-content:hover {

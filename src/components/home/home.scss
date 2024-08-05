@@ -29,6 +29,13 @@
         height: 100%;
         position: absolute;
         z-index: 1;
+        animation: moveStars 10s linear infinite;
+
+        @keyframes moveStars {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
     }
     .planets{
         background-image: url('/workspaces/codespaces-react/src/components/home/planets.png');
@@ -38,6 +45,7 @@
         height: 100%;
         position: absolute;
         z-index: 2;
+        
         
     }
 }
